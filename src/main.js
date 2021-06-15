@@ -10,12 +10,13 @@ import "animate.css/animate.css";
 Vue.config.productionTip = false
 
 import {
-  faShoppingCart,
-  faDollarSign,
-  faSwimmer
+  faPhone,
+  faSwimmer,
+  faEnvelope,
+  faMapMarker,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faShoppingCart, faDollarSign, faSwimmer);
+library.add(faSwimmer, faPhone, faEnvelope, faMapMarker);
 
 new Vue({
   router,
