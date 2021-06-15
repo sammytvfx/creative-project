@@ -2,10 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import "bootstrap";
+import "purecss";
 import {library} from "@fortawesome/fontawesome-svg-core";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "animate.css/animate.css";
+import "purecss/build/pure.css";
 
 Vue.config.productionTip = false
 
