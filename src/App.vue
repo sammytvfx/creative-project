@@ -13,6 +13,17 @@
     </div>
   </div>
 </nav>
+<!-- Footer -->
+<footer class="page-footer font-small blue fixed-bottom">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright: Samuel Thomas ||
+    <a href="https://github.com/sammytvfx/creative-project"> Github</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
     <router-view/>
   </div>
   
