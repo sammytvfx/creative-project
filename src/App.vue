@@ -1,25 +1,25 @@
 <template>
-  <div id="app" class="container mt-5">
-    <h1>Swim School</h1>
-    <p class="animate__animated animate__fadeInDown">Take a look at our swimming lessons</p>
-    <font-awesome-icon icon="swimmer"> </font-awesome-icon>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <router-link class="navbar-brand" to="/">Swim School</router-link>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <router-link class="nav-item nav-link active" to="/">Home <span class="sr-only">(current)</span></router-link>
+      <router-link class="nav-item nav-link" to="/Lessons">Lessons</router-link>
+      <router-link class="nav-item nav-link" href="#">Pricing</router-link>
     </div>
+  </div>
+</nav>
     <router-view/>
   </div>
+  
 </template>
 
 <script>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-export default {
-  name: "app",
-  components: {
-    FontAwesomeIcon
-  }
-};
 
 </script>
 
