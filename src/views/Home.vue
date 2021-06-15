@@ -18,7 +18,7 @@
           <div :style="cssProps3" class="col-sm">
             <h2> Got Questions? </h2>
             <p> Make an enquiry here </p>
-            <router-link to="/Questions"><button>Enquire >></button></router-link>
+            <router-link to="/Questions"><button >Enquire >></button></router-link>
           </div>
         </div>
       </div>
@@ -45,11 +45,6 @@ export default {
       cssProps3: {
         backgroundImage: `url(${require('@/assets/home-page/clipboard2.jpg')})`
       },
-        methods: {
-         goToLessons(){
-          this.$router.push('../Lessons');
-        }
-      }
     }
   }
 }

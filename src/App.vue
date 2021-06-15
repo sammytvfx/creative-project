@@ -10,6 +10,7 @@
       <router-link class="nav-item nav-link" to="/">Home</router-link>
       <router-link class="nav-item nav-link" to="/Lessons">Lessons</router-link>
       <router-link class="nav-item nav-link" to="/Register">Register</router-link>
+      <router-link class="nav-item nav-link" to="/Questions">Contact Us</router-link>
     </div>
   </div>
 </nav>
