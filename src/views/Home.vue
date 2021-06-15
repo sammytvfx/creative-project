@@ -9,7 +9,7 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from '@/components/Home.vue'
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default {

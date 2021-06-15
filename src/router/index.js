@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Lessons from '../views/Lessons.vue'
-
+import Register from '../views/Register.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +15,11 @@ const routes = [
     path: '/Lessons',
     name: 'Lessons',
     component: Lessons
+  },
+  {
+    path: '/Register',
+    name: 'Register',
+    component: Register
   },
 ]
 
