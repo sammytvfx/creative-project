@@ -20,11 +20,11 @@ import {
 
 library.add(faSwimmer, faPhone, faEnvelope, faMapMarker);
 
-let data = {
-  user: null
-}
 
 new Vue({
   router,
+  data: {
+    user: null
+  },
   render: h => h(App)
 }).$mount('#app')

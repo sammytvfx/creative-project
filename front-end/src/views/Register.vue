@@ -1,5 +1,5 @@
 <template>
-<div class="dashboard">
+<div class="login">
   <Account v-if="user" />
   <Login v-else />
 </div>
@@ -10,7 +10,7 @@ import Account from '@/components/Account.vue';
 import Login from '@/components/Login.vue';
 import axios from 'axios';
 export default {
-  name: 'dashboard',
+  name: 'login',
   components: {
     Account,
     Login,
