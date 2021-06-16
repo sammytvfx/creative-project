@@ -23,7 +23,7 @@
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
         </div>
         <br>
-        <button type="submit">Submit >></button>
+        <button class="pure-button" type="submit">Submit >></button >
         </form>
     <h2>Other contact methods</h2>    
         <div class="row">

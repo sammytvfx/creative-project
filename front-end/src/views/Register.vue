@@ -13,7 +13,7 @@
         <input type="password" placeholder="password" v-model="password">
       </fieldset>
       <fieldset>
-        <button type="submit" class="pure-button pure-button-primary" @click.prevent="register">Register</button>
+        <button type="submit" class="pure-button" @click.prevent="register">Register</button>
       </fieldset>
     </form>
     <p v-if="error" class="error">{{error}}</p>
@@ -24,7 +24,7 @@
         <input type="password" placeholder="password" v-model="passwordLogin">
       </fieldset>
       <fieldset>
-        <button type="submit" class="pure-button pure-button-primary" @click.prevent="login">Login</button>
+        <button type="submit" class="pure-button" @click.prevent="login">Login</button>
       </fieldset>
     </form>
     <p v-if="errorLogin" class="error">{{errorLogin}}</p>
