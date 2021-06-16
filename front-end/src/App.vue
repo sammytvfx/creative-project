@@ -9,7 +9,7 @@
     <div class="navbar-nav">
       <router-link class="nav-item nav-link" to="/">Home</router-link>
       <router-link class="nav-item nav-link" to="/Lessons">Lessons</router-link>
-      <router-link class="nav-item nav-link" to="/Register">Register</router-link>
+      <router-link class="nav-item nav-link" to="/Register">Register/Login</router-link>
       <router-link class="nav-item nav-link" to="/Questions">Contact Us</router-link>
     </div>
   </div>

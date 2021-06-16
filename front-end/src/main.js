@@ -20,6 +20,10 @@ import {
 
 library.add(faSwimmer, faPhone, faEnvelope, faMapMarker);
 
+let data = {
+  user: null
+}
+
 new Vue({
   router,
   render: h => h(App)
