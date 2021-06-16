@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require("cors");
+//const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 
@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-app.use(cors());
+//app.use(cors());
 
 // connect to the mongodb database
 mongoose.connect('mongodb://localhost:27017/swim-school', {
@@ -20,15 +20,9 @@ mongoose.connect('mongodb://localhost:27017/swim-school', {
   useNewUrlParser: true
 });
 
-app.get('/WelcomeMessage', (req,res) => {
-
-    const WelcomeMessage = "Test";
-
-    res.send(WelcomeMessage);
-});
-
-app.post('/WelcomeMessage', (req,res) => {
-    console.log(req.body);
-});
+// import the users module and setup its API path
+const users = require("./users.js");
+app.use("/api/users", users.routes);
+  
 
 app.listen(3002, () => console.log('Server listening on port 3002!'));
