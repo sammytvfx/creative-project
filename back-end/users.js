@@ -182,6 +182,9 @@ router.get('/', validUser, async (req, res) => {
   }
 });
 
+router.post('/email', async (req, res) => {
+  
+
 
   module.exports = {
     routes: router,
