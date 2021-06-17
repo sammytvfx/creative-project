@@ -11,6 +11,7 @@
       <router-link class="nav-item nav-link" to="/Lessons">Lessons</router-link>
       <router-link class="nav-item nav-link" to="/Register">Register/Login</router-link>
       <router-link class="nav-item nav-link" to="/Questions">Contact Us</router-link>
+      <router-link class="nav-item nav-link" to="/Bookings">Bookings</router-link>
     </div>
   </div>
 </nav>

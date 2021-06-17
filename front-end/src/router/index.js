@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import Lessons from '../views/Lessons.vue'
 import Register from '../views/Register.vue'
 import Questions from '../views/Questions.vue'
+import Bookings from'../views/Bookings.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -26,6 +28,11 @@ const routes = [
     path: '/Questions',
     name: 'Questions',
     component: Questions
+  },
+  {
+    path: '/Bookings',
+    name: 'Bookings',
+    component: Bookings,
   },
 ]
 

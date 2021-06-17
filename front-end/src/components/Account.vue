@@ -44,14 +44,6 @@ export default {
     user() {
       return this.$root.$data.user;
     },
-   async add () {
-      try {
-        await axios.post("/api/users");
-        email: this.$root.$data.email;
-      } catch (error) {
-        console.log("did not add e-mail");
-      }
-   }
   },
     methods: {
     async logout() {

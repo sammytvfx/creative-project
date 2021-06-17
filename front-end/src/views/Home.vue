@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default {
