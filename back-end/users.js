@@ -182,14 +182,17 @@ router.get('/', validUser, async (req, res) => {
   }
 });
 
-/*
-router.post('/email', async (req, res) => {
-  try{
-    res.send({
-      email: req.user
-    })
+//log out
+router.delete('/', validUser, async(req, res) => {
+  try {
+    req.session = null;
+    res.sendStatus(200);
+  } catch(error) {
+    console.log(error);
+    res.sendStatus(500);
   }
-  */
+});
+
 
 
 module.exports = {

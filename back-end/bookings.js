@@ -2,6 +2,11 @@ const express = require("express");
 const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
 
+//Imported user model
+const users = require("./users.js");
+const User = users.model;
+const validUser = users.valid;
+
 const router = express.Router();
 
 const bookingSchema = new mongoose.Schema({
@@ -20,8 +25,9 @@ const bookingSchema = new mongoose.Schema({
 
 const Booking = mongoose.model('Booking', bookingSchema);
 
-/* Middleware */
 
+/* Middleware */
+/*
 // middleware function to check for logged-in users
 const validUser = async (req, res, next) => {
   if (!req.session.userID)
@@ -49,6 +55,9 @@ const validUser = async (req, res, next) => {
   // if everything succeeds, move to the next middleware
   next();
 };
+
+*/
+
 
 // get one booking
 router.get('/:id', async (req, res) => {
