@@ -10,9 +10,10 @@
       to swim 5 metres of front paddle and back paddle. Then eventually move on
       to 10-25 metres of basic front crawl and backstroke. Please note that we
       may use some floatation kit (e.g. pool noodles) to help with this but
-      should be able to swim without floats before moving on. The following are the different <strong>beginner groups</strong>:
+      should be able to swim without floats before moving on. <router-link to="/Bookings"><button class="pure-button"> Book class >></button></router-link>
     </p>
       <ul id="groups">
+        GROUPS
           <li>Stage<span class="red">1</span></li>
           <li>Stage<span class="orange">2</span></li>
           <li>Stage<span class="yellow">3</span></li>
@@ -21,7 +22,7 @@
 
       <h3><font-awesome-icon icon="long-arrow-alt-right"> </font-awesome-icon></h3>
 
-    <h2> Intermediate Swimmers'</h2>
+    <h2> Intermediate Swimmers' <font-awesome-icon icon="fish"> </font-awesome-icon></h2>
     <p>
       Intermediate swimmers lessons are designed for those that already have
       basic water compentency. In these classes we aim to build a stronger
@@ -29,9 +30,10 @@
       front-crawl and backstroke. We also will teach breaststroke and butterfly.
       As well as more advanced water safety practices (e.g. treading water) and
       additional pool rules. At minimum they should be able to confidently swim
-      25 metres on each stroke before moving on.The following are the different <strong>intermediate groups</strong>:
+      25 metres on each stroke before moving on.<router-link to="/Bookings"><button class="pure-button"> Book class >></button></router-link>
     </p>
       <ul id="groups">
+        GROUPS
           <li>Stage<span class="blue">5</span></li>
           <li>Stage<span class="indigo">6</span></li>
           <li>Stage<span class="violet">7</span></li>
@@ -46,10 +48,11 @@
       swimming or life-saving skills. For the competitive swimmers it will be
       learning the basics of pool starts (dives) and turns. Alternatively, they could learn important 
       life-saving and water surival skills. These include knowing how to swim in clothes as well as aid other 
-      swimmers by rescuing them.
+      swimmers by rescuing them. <router-link to="/Bookings"><button class="pure-button"> Book class >></button></router-link>
     </p>
 
-          <ul id="groups">
+      <ul id="groups">
+        GROUPS
           <li>Stage<span class="grey">8</span></li>
           <li>Stage<span class="grey">9</span></li>
           <li>Stage<span class="grey">10</span></li>
