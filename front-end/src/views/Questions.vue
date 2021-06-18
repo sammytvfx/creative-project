@@ -1,9 +1,10 @@
 <template>
   <div class="form">
     <h1>Enquiry Form</h1>
-    <form>
+    <form @submit.prevent="submitQuery">
       <div class="input-group mb-3">
         <input
+          v-model= "firstName"
           type="text"
           class="form-control"
           placeholder="First Name"
@@ -13,6 +14,7 @@
       </div>
       <div class="input-group mb-3">
         <input
+          v-model="lastName"
           type="text"
           class="form-control"
           placeholder="Last Name"
@@ -22,7 +24,8 @@
       </div>
       <div class="input-group mb-3">
         <input
-          type="text"
+          v-model.number='phoneNumber' 
+          type="number"
           class="form-control"
           placeholder="Phone Number"
           aria-label="Phone Number"
@@ -34,11 +37,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text">Enquiry</span>
         </div>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
+        <textarea class="form-control" v-model="enquiry" aria-label="With textarea"></textarea>
       </div>
       <br />
       <div class="form-group">
-        <input
+        <input 
+          v-model="email"
           type="email"
           class="form-control"
           id="exampleInputEmail1"
@@ -84,6 +88,21 @@ export default {
   components: {
     FontAwesomeIcon,
   },
+    data(){
+      return{
+    firstName: '',
+    lastName: '',
+    phoneNumber: '',
+    enquiry: '',
+    email: '',
+    }
+  },
+  methods:{
+    submitQuery(){
+      return console.log("inside submit query");
+    }
+  }
+
 };
 </script>
 
