@@ -20,6 +20,36 @@ const bookingSchema = new mongoose.Schema({
 
 const Booking = mongoose.model('Booking', bookingSchema);
 
+/* Middleware */
+
+// middleware function to check for logged-in users
+const validUser = async (req, res, next) => {
+  if (!req.session.userID)
+    return res.status(403).send({
+      message: "not logged in"
+    });
+  try {
+    const user = await User.findOne({
+      _id: req.session.userID
+    });
+    if (!user) {
+      return res.status(403).send({
+        message: "not logged in"
+      });
+    }
+    // set the user field in the request
+    req.user = user;
+  } catch (error) {
+    // Return an error if user does not exist.
+    return res.status(403).send({
+      message: "not logged in"
+    });
+  }
+
+  // if everything succeeds, move to the next middleware
+  next();
+};
+
 // get one booking
 router.get('/:id', async (req, res) => {
   try {
@@ -97,3 +127,9 @@ router.delete('/:id', async (req, res) => {
     res.sendStatus(500);
   }
 });
+
+module.exports = {
+  routes: router,
+  model: Booking,
+  valid: validUser
+};
