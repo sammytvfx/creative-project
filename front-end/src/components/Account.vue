@@ -13,6 +13,8 @@
       <input v-model="lastName" />
       <button @click="editItem(findItem)">Edit</button>
 
+
+<h3>Your current bookings:</h3>
       <br><br>
       <div class="field">
         <label class="label">Email</label>

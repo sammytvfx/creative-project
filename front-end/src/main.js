@@ -16,9 +16,12 @@ import {
   faSwimmer,
   faEnvelope,
   faMapMarker,
+  faSwimmingPool,
+  faArrowRight,
+  faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faSwimmer, faPhone, faEnvelope, faMapMarker);
+library.add(faSwimmer, faPhone, faEnvelope, faMapMarker, faSwimmingPool, faLongArrowAltRight);
 
 
 new Vue({

@@ -182,8 +182,14 @@ router.get('/', validUser, async (req, res) => {
   }
 });
 
+/*
 router.post('/email', async (req, res) => {
-  
+  try{
+    res.send({
+      email: req.user
+    })
+  }
+  */
 
 
   module.exports = {
