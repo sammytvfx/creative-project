@@ -30,7 +30,7 @@
       front-crawl and backstroke. We also will teach breaststroke and butterfly.
       As well as more advanced water safety practices (e.g. treading water) and
       additional pool rules. At minimum they should be able to confidently swim
-      25 metres on each stroke before moving on.<router-link to="/Bookings"><button class="pure-button"> Book class >></button></router-link>
+      25 metres on each stroke before moving on.<br><router-link to="/Bookings"><button class="pure-button"> Book class >></button></router-link>
     </p>
       <ul id="groups">
         GROUPS
@@ -48,7 +48,7 @@
       swimming or life-saving skills. For the competitive swimmers it will be
       learning the basics of pool starts (dives) and turns. Alternatively, they could learn important 
       life-saving and water surival skills. These include knowing how to swim in clothes as well as aid other 
-      swimmers by rescuing them. <router-link to="/Bookings"><button class="pure-button"> Book class >></button></router-link>
+      swimmers by rescuing them. <br><router-link to="/Bookings"><button class="pure-button"> Book class >></button></router-link>
     </p>
 
       <ul id="groups">
@@ -98,7 +98,7 @@ li{
     display: inline-block;
     width: 50%;
     height: 100%;
-    background-color: rgb(195, 241, 255);
+    background-color: rgb(223, 247, 255);
 }
 
 #group > li:nth-child(even) {
@@ -230,14 +230,17 @@ span.violet {
 p {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    max-width: 152ch;
+
 }
 
 h2 {
   background-color: rgb(248, 246, 246);
   padding: 0.5em;
   margin: 12px;
-  
+
 }
+
 
 </style>
